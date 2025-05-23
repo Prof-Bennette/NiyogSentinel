@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Images</title>
+    <link rel="stylesheet" href="cstyle.css">
+    <link   rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+ <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #D2D2D2;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(images/bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner">
+        <div class="slider" style="--quantity: 6">
+            <div class="item" style="--position: 1"><img src="images/CLB.jpg" alt=""></div>
+
+            <div class="item" style="--position: 2"><img src="images/CRB1.jpg" alt=""></div>
+
+            <div class="item" style="--position: 3"><img src="images/CSI.jpg" alt=""></div>
+
+            <div class="item" style="--position: 4"><img src="images/RPW.jpg" alt=""></div>
+
+            <div class="item" style="--position: 5"><img src="images/Coconut Pest Images.png" alt=""></div>
+            
+            <div class="item" style="--position: 6"><img src="images/Coconut Pest Images-02.png" alt=""></div>
+        </div>
+        <div class="content">
+            <h1>Coconut Pest Detection</h1>
+            <div class="author">
+                <h2>Bernard A. Bullicer</h2>
+                <p>MIT</p>
+            </div>
+            <div class="model"></div>
+        </div>
+    </div>
+
+   
+<!--    <section>
+        <div class="content">
+            <div class="info">
+                <p>Lorem ipsum dolor sit <span class="niyog-pest">Coconut Pests</span>amet consectetur adipisicing elit. Nam voluptatum magni dignissimos iure. Explicabo, ipsa optio suscipit eius adipisci tenetur repellat numquam, eaque possimus tempora deleniti minus reprehenderit. Ad, perspiciatis!</p>
+                <button class="btn">Click</button>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <span>1</span>
+                        <h2>Coconut Leaf Beetle (CLB)</h2>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <span>2</span>
+                        <h2>Coconut Scale Insect (CSI)</h2>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <span>3</span>
+                        <h2>Coconut Rhinoceros Beetle (CRB)</h2>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <span>4</span>
+                        <h2>Red Palm Weevil (RPW)</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="capp.js"></script>
+-->
+</body>
+</html>
